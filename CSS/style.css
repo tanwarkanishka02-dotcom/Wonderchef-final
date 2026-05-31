@@ -1130,4 +1130,17 @@ img{
     right:20px;
 }
 
+.cook-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.cook-card p {
+    min-height: 60px;
+}
+
+.cook-card a {
+    margin-top: auto;
+}
+
 
