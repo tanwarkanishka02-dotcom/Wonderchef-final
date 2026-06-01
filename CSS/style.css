@@ -277,12 +277,13 @@ img{
 }
 
 .cook-card img{
-
-    height:350px;
-
+    height:450px;
+    width:100%;
+    display: block;
     object-fit:cover;
-
     border-radius:16px;
+    border:none !important;
+    box-shadow:none !important;
 }
 
 .cook-card h3{
