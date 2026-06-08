@@ -226,13 +226,14 @@ img{
 
 .collection-card{
 
-    background:#F1EBDF;
+    background: transparent;
 
-    padding:25px;
+    padding: 10px;
+
 
     border-radius:16px;
 
-    text-align:center;
+    text-align:left;
 
     transition:0.3s;
 }
@@ -243,9 +244,15 @@ img{
 
 .collection-card img{
 
-    width:220px;
+    width:700px;
+    
+    object-fit: contain;
+
+    display: block;
 
     margin:auto;
+
+    background: transparent;
 }
 
 .collection-card h3{
@@ -388,17 +395,20 @@ img{
 
     grid-template-columns:repeat(3,1fr);
 
-    gap:30px;
+    gap:35px;
+
+    padding: 15px;
 }
 
 .product-card{
 
-    background:#F1EBDF;
+    background: transparent;
 
-    padding:25px;
+    padding:9px;
+
+    min-width: 450px;
 
     border-radius:20px;
-
     position:relative;
 
     transition:0.3s;
@@ -429,7 +439,9 @@ img{
 
 .product-card img{
 
-    height:280px;
+    height:400px;
+
+    width: 100%;
 
     object-fit:contain;
 }
@@ -441,16 +453,20 @@ img{
 
 .product-info h3{
 
-    font-size:24px;
+    font-size:22px;
 
-    margin-bottom:10px;
+    margin-bottom:15px;
 }
 
 .product-info p{
+    font-size:15px;
+    line-height:1.5;
+}
 
-    color:var(--text-light);
-
-    line-height:1.6;
+.product-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
 }
 
 .price{
@@ -461,9 +477,9 @@ img{
 
     color:var(--primary);
 
-    font-size:24px;
+    font-size:18px;
 
-    font-weight:700;
+    font-weight:500;
 }
 
 .center-btn{
@@ -977,6 +993,7 @@ img{
     overflow: hidden;
 }
 
+
 .recipes .section-title {
     text-align: center;
     margin-bottom: 50px;
@@ -1025,9 +1042,10 @@ img{
     overflow:hidden;
 }
 
+
 .recipe-card img{
-    width:110%;
-    height:100%;
+    width:325px;
+    height:170px;
     object-fit:cover;
     display:block;
 }
@@ -1187,7 +1205,6 @@ img{
 
     z-index:1;
 }
-
 
 
 
