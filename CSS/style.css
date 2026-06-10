@@ -215,6 +215,7 @@ img {
 
 .collections {
     background: var(--light-bg);
+    margin-top: 10px;
 }
 
 .collection-grid {
@@ -222,21 +223,27 @@ img {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 
-    gap: 30px;
+    gap: 1px;
 }
 
 .collection-card {
 
     background: transparent;
 
-    padding: 10px;
+    padding: 0px;
 
-
-    border-radius: 16px;
+    border-radius: 10px;
 
     text-align: left;
 
-    transition: 0.3s;
+    transition: 0.5s;
+
+    display: inline;
+
+    margin: auto;
+
+    
+
 }
 
 .collection-card:hover {
@@ -245,7 +252,7 @@ img {
 
 .collection-card img {
 
-    width: 700px;
+    width: 100%;
 
     object-fit: contain;
 
@@ -254,6 +261,8 @@ img {
     margin: auto;
 
     background: transparent;
+
+    margin-left: -8px;
 }
 
 .collection-card h3 {
@@ -265,7 +274,22 @@ img {
     color: var(--text-dark);
 }
 
+
 /* COOKING SECTION */
+
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+}
+
+.cards-container {
+    display: flex;
+    gap: 20px;
+    margin-top: -0px;
+}
 
 .cooking-grid {
 
@@ -285,8 +309,10 @@ img {
 }
 
 .cook-card img {
-    height: 450px;
+    background-color: #EEE3D1;
+    height: 550px;
     width: 100%;
+    padding: 0px;
     display: block;
     object-fit: cover;
     border-radius: 16px;
@@ -325,16 +351,18 @@ img {
 
 /* BANNER SECTION */
 
-.banner {
-    position: relative;
-    padding-top: 0;
+.banner{
+    position:relative;
+    width:100%;
+    margin:0;
+    padding:0 0 120px 0;
 }
 
-.banner img {
-    width: 100%;
-    border-radius: 20px;
-    height: 650px;
-    object-fit: cover;
+.banner img{
+    display:block;
+    width:100%;
+    height:800px;
+    object-fit:cover;
 }
 
 
@@ -342,15 +370,17 @@ img {
 
 .feature-strip {
 
-    background: #F3ECE0;
+    background: #EEE3D1;
 
-    width: 90%;
+    width: 100%;
+
+    max-width: 1830px;
 
     margin: auto;
 
-    padding: 35px;
+    padding: 45px;
 
-    border-radius: 20px;
+    border-radius: 9px;
 
     display: grid;
     grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
@@ -391,6 +421,11 @@ img {
 
 /* ESSENTIALS */
 
+.essentials{
+    padding-top: 0px;
+    margin-top: 0px;
+}
+
 .products-grid {
 
     display: grid;
@@ -399,14 +434,16 @@ img {
 
     gap: 35px;
 
-    padding: 15px;
+    margin-top: 0px;
+
+    padding-top: 0px;
 }
 
 .product-card {
 
     background: transparent;
 
-    padding: 9px;
+    padding: 15px;
 
     min-width: 450px;
 
@@ -428,7 +465,7 @@ img {
     top: 20px;
     left: 20px;
 
-    background: white;
+    background: #FFFFFF;
 
     padding: 6px 12px;
 
@@ -491,7 +528,103 @@ img {
     text-align: center;
 }
 
+.essentials-btn-wrap{
+    display:flex;
+    justify-content:center;
+    margin-top:40px;
+}
+
+.essentials-btn{
+    background:#ef4444;
+    color: #f9f9f9;
+
+    border:none;
+    border-radius:40px;
+
+    padding:14px 40px;
+
+    font-size:15px;
+    font-weight:600;
+
+    cursor:pointer;
+
+    box-shadow:0 8px 18px rgba(0,0,0,0.15);
+
+    transition:0.3s;
+}
+
+.essentials-btn:hover{
+    transform:translateY(-3px);
+}
+
+.slider-controls{
+    display:flex;
+    justify-content:flex-end;
+    gap:15px;
+    margin-bottom:30px;
+    margin-right:50px;
+}
+
+.slider-btn{
+    width:52px;
+    height:52px;
+
+    border:none;
+    border-radius:50%;
+
+    background:#fff;
+    color:#ef4444;
+
+    font-size:24px;
+    cursor:pointer;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    box-shadow:0 4px 12px rgba(0,0,0,0.12);
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:0px;
+}
+
+.section-title h2{
+    margin-bottom:10px;
+}
+
+.section-title p{
+    margin:0;
+}
+
+
+
 /* RECIPES */
+
+.section-title h2{
+    font-family:'FK Screamer Legacy Trial',sans-serif;
+    font-size:72px;
+    line-height:0.95;
+    letter-spacing:1px;
+}
+
+.recipes{
+    padding-top: 0px;
+    margin-top: -40px;
+}
+
+.recipes .section-title{
+    margin-bottom: 30px;
+}
+
+.recipes .section-title h2{
+    margin-bottom: 20px;
+}
+
+.recipes .section-title p{
+    margin: 0;
+}
 
 .recipe-slider-wrapper{
     position:relative;
@@ -604,7 +737,7 @@ img {
 
 .founder {
 
-    background: #E3D8C8;
+    background: #EEE3D1;
 
     padding: 140px 90px;
 
@@ -826,7 +959,7 @@ img {
 
 .footer {
 
-    background: #D8C7B0;
+    background: #e2d0b8;
 
     padding: 80px 7% 20px;
 }
@@ -859,7 +992,7 @@ img {
 
     margin-top: 30px;
 
-    background: white;
+    background: #f9f9f9;
 
     border-radius: 40px;
 
